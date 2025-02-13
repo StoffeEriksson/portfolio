@@ -14,6 +14,18 @@ body {
   background-color: #a4c2d1;
 }
 
+/* Buttons */
+
+.costum-button {
+  background-color: #1f7798;
+  border: #1f7798;
+}
+
+.costum-button:hover {
+  background-color: #1d6d8a;
+  border: #1d6d8a;
+}
+
 h1,
 h2 {
   font-family: "DM serif Display", serif;
