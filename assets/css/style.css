@@ -34,8 +34,9 @@ h2 {
 
 #hero {
   background-image: url("../images/background.webp");
-  background-color: #dbdcde;
   background-position: 50% 70%;
+  background-color: #dbdcde;
   min-height: 500px;
   padding: 5% 7%;
+  background-size: cover;
 }
