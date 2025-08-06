@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0e17;
+  color: #fffffe;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #0f0e17;
+  padding: 20px 0;
+  border-bottom: 1px solid #2e2e3a;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ff8906;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fffffe;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff8906;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #fffffe;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 span {
+  color: #ff8906;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  color: #a7a9be;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 30px;
+  color: #a7a9be;
+  max-width: 500px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: 2px solid #ff8906;
+  text-decoration: none;
+  color: #ff8906;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #ff8906;
+  color: #0f0e17;
+}
+
+.btn.primary {
+  background-color: #ff8906;
+  color: #0f0e17;
+}
+
+.btn.primary:hover {
+  background-color: transparent;
+  color: #ff8906;
+}
+
+/* Profile Image */
+.hero-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #ff8906;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+}
