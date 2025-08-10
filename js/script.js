@@ -1,27 +1,37 @@
-// MOBILE NAV TOGGLE (exempel för framtida mobilmeny)
-const menuToggle = document.querySelector('#menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+// Hamburger-toggle
+const toggleBtn = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-if (menuToggle) {
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+if (toggleBtn && navLinks) {
+  toggleBtn.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("show");
+    toggleBtn.classList.toggle("active", isOpen);
+    toggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  // Stäng menyn när man klickar på en länk (mobil)
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      if (navLinks.classList.contains("show")) {
+        navLinks.classList.remove("show");
+        toggleBtn.classList.remove("active");
+        toggleBtn.setAttribute("aria-expanded", "false");
+      }
+    });
   });
 }
 
-// SCROLL TO TOP BUTTON
+// Back to Top-knapp
 const scrollToTopBtn = document.getElementById("scrollToTop");
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 300) {
-    scrollToTopBtn.style.display = "block";
+  if (window.scrollY > 300) {
+    scrollToTopBtn.style.display = "flex"; // visar knappen
   } else {
-    scrollToTopBtn.style.display = "none";
+    scrollToTopBtn.style.display = "none"; // gömmer knappen
   }
 });
 
 scrollToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });

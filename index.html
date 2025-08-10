@@ -5,22 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christoffer Eriksson - Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ce5ea65d4c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="logo">Christoffer Eriksson</div>
-        <nav>
-          <ul>
-            <li><a href="#about">About me</a></li>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">Christoffer Eriksson</div>
+          <button
+            class="nav-toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
-
     <section class="hero">
       <div class="container hero-content">
         <div class="hero-text">
@@ -36,7 +48,24 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="images/profile.png" alt="Profilbild på Christoffer" />
+          <img src="images/profile.png" alt="Christoffer" />
+
+          <div class="hero-socials">
+            <a
+              href="https://www.linkedin.com/in/christoffer-eriksson-29b783349/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/StoffeEriksson"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -207,132 +236,257 @@
         </div>
       </div>
     </section>
-
     <section class="projects-section" id="projects">
       <div class="container">
         <h2 class="section-title">My Projects</h2>
         <p class="section-subtitle">Some of my featured projects</p>
         <div class="projects-grid">
+          <!-- Projekt 1 -->
           <div class="project-card">
             <img
-              src="images/fishing-project.png"
-              alt="Fishing Project Preview"
+              src="images/sport-fishing-equipment.png"
+              alt="Sport Fishing Equipment – e-handel byggd i Django"
+              loading="lazy"
             />
             <h3>Sport Fishing Equipment</h3>
-            <p>A fullstack e-commerce platform...</p>
+            <p class="project-meta">2025 • Full-stack</p>
+            <p>
+              Full-stack e-commerce platform built with Django. Features include product categories, shopping cart, Stripe integration, user management, order history, ratings, and comments.
+            </p>
             <div class="tags">
-              <span>HTML</span><span>CSS</span><span>Django</span>
+              <span>Django</span><span>Python</span><span>Stripe</span><span>PostgreSQL</span>
             </div>
             <a
               class="btn-secondary"
               href="https://sport-fishing-equipment-247864a1d871.herokuapp.com"
               target="_blank"
+              rel="noopener"
               >Visit Project</a
             >
-          </div>
-           <div class="project-card">
-            <img
-              src="images/fishing-project.png"
-              alt="Fishing Project Preview"
-            />
-            <h3>Sport Fishing Equipment</h3>
-            <p>A fullstack e-commerce platform...</p>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>Django</span>
-            </div>
             <a
-              class="btn-secondary"
-              href="https://sport-fishing-equipment-247864a1d871.herokuapp.com"
+              class="btn"
+              href="https://github.com/StoffeEriksson/sport-fishing-equipment"
               target="_blank"
-              >Visit Project</a
+              rel="noopener"
+              >View on GitHub <i class="fab fa-github"></i></a
             >
           </div>
-           <div class="project-card">
+
+          <!-- Projekt 2 -->
+          <div class="project-card">
             <img
-              src="images/fishing-project.png"
-              alt="Fishing Project Preview"
+              src="images/fishing-log.png"
+              alt="Fishing log – Log fishing trips"
+              loading="lazy"
             />
-            <h3>Sport Fishing Equipment</h3>
-            <p>A fullstack e-commerce platform...</p>
+            <h3>Fishing Log</h3>
+            <p class="project-meta">2025 • Full-stack</p>
+            <p>
+              Dynamic logbook with statistics and data visualization. Users can record and analyze fishing trips using graphs and filtering.
+            </p>
             <div class="tags">
-              <span>HTML</span><span>CSS</span><span>Django</span>
+              <span>Django</span><span>Python</span><span>JavaScript</span>
             </div>
             <a
               class="btn-secondary"
-              href="https://sport-fishing-equipment-247864a1d871.herokuapp.com"
+              href="https://fishing-log-ecfc8a6f98ec.herokuapp.com/"
               target="_blank"
+              rel="noopener"
               >Visit Project</a
             >
-          </div>
-           <div class="project-card">
-            <img
-              src="images/fishing-project.png"
-              alt="Fishing Project Preview"
-            />
-            <h3>Sport Fishing Equipment</h3>
-            <p>A fullstack e-commerce platform...</p>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>Django</span>
-            </div>
             <a
-              class="btn-secondary"
-              href="https://sport-fishing-equipment-247864a1d871.herokuapp.com"
+              class="btn"
+              href="https://github.com/StoffeEriksson/fishing-log?tab=readme-ov-file"
               target="_blank"
-              >Visit Project</a
+              rel="noopener"
+              >View on GitHub <i class="fab fa-github"></i></a
             >
           </div>
-           <div class="project-card">
+
+          <!-- Projekt 3 -->
+          <div class="project-card">
             <img
-              src="images/fishing-project.png"
-              alt="Fishing Project Preview"
+              src="images/Whack-a-mole.png"
+              alt="Whack-a-mole – JavaScript game"
+              loading="lazy"
             />
-            <h3>Sport Fishing Equipment</h3>
-            <p>A fullstack e-commerce platform...</p>
+            <h3>Whack-a-mole</h3>
+            <p class="project-meta">2025 • javascript Game</p>
+            <p>
+              Interactive browser game built in JavaScript. Trains timing and reaction skills with animations and score tracking.
+            </p>
             <div class="tags">
-              <span>HTML</span><span>CSS</span><span>Django</span>
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
             <a
               class="btn-secondary"
-              href="https://sport-fishing-equipment-247864a1d871.herokuapp.com"
+              href="https://stoffeeriksson.github.io/Whack-a-Mole/"
               target="_blank"
+              rel="noopener"
               >Visit Project</a
             >
+            <a
+              class="btn"
+              href="https://github.com/StoffeEriksson/whack-a-mole?tab=readme-ov-file"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub <i class="fab fa-github"></i></a
+            >
           </div>
-           <div class="project-card">
+
+          <!-- Projekt 4 -->
+          <div class="project-card">
             <img
-              src="images/fishing-project.png"
-              alt="Fishing Project Preview"
+              src="images/fishing-adventure.png"
+              alt="fishing-adventure"
+              loading="lazy"
             />
-            <h3>Sport Fishing Equipment</h3>
-            <p>A fullstack e-commerce platform...</p>
+            <h3>Fishing adventure</h3>
+            <p class="project-meta">2025 • Frontend</p>
+            <p>
+              Responsive information website for a fishing camp. Includes a booking form, image gallery, contact section, and visitor information.
+            </p>
             <div class="tags">
-              <span>HTML</span><span>CSS</span><span>Django</span>
+              <span>HTML</span><span>CSS</span><span>Bootstrap</span>
             </div>
             <a
               class="btn-secondary"
-              href="https://sport-fishing-equipment-247864a1d871.herokuapp.com"
+              href="https://stoffeeriksson.github.io/fishing-adventures/"
               target="_blank"
+              rel="noopener"
               >Visit Project</a
+            >
+            <a
+              class="btn"
+              href="https://github.com/StoffeEriksson/fishing-adventures?tab=readme-ov-file"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub <i class="fab fa-github"></i></a
+            >
+          </div>
+
+          <!-- Projekt 5 -->
+          <div class="project-card">
+            <img
+              src="images/calculator.png"
+              alt="Calculator"
+              loading="lazy"
+            />
+            <h3>Calculator</h3>
+            <p class="project-meta">2025 • Calculator</p>
+            <p>
+              Simple calculator built with HTML, CSS, and JavaScript, supporting basic arithmetic operations
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>Javascript</span>
+            </div>
+            <a
+              class="btn-secondary"
+              href="https://stoffeeriksson.github.io/Calculator/"
+              target="_blank"
+              rel="noopener"
+              >Visit Project</a
+            >
+            <a
+              class="btn"
+              href="https://github.com/StoffeEriksson/Calculator"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub <i class="fab fa-github"></i></a
+            >
+          </div>
+
+          <!-- Projekt 6 -->
+          <div class="project-card">
+            <img
+              src="images/love-math.png"
+              alt="Love Math – game"
+              loading="lazy"
+            />
+            <h3>Love Math</h3>
+            <p class="project-meta">2025 • Math game</p>
+            <p>
+              Interactive math quiz game built with HTML, CSS, and JavaScript. Features multiple operations, real-time score tracking, and instant feedback.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a
+              class="btn-secondary"
+              href="https://stoffeeriksson.github.io/Love-Maths/"
+              target="_blank"
+              rel="noopener"
+              >Visit Project</a
+            >
+            <a
+              class="btn"
+              href="https://github.com/StoffeEriksson/Love-Maths"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub <i class="fab fa-github"></i></a
             >
           </div>
         </div>
       </div>
     </section>
     <section id="contact" class="contact-section">
-  <div class="container">
-    <h2 class="section-title">Get In Touch</h2>
-    <p class="section-subtitle">
-      Have a project in mind or want to collaborate? Feel free to reach out!
-    </p>
-    <form class="contact-form" action="https://formspree.io/f/mblkpkgy" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="text" name="subject" placeholder="Subject" />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="btn-primary">Send Message</button>
-    </form>
-  </div>
-</section>
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">
+          Have a project in mind or want to collaborate? Feel free to reach out!
+        </p>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mblkpkgy"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-socials">
+        <a
+          href="https://www.linkedin.com/in/christoffer-eriksson-29b783349/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/StoffeEriksson"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
 
+      <div class="footer-contact">
+        <p>
+          Email:
+          <a href="mailto:christoffer.stoffe94@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </p>
+        <p>
+          Phone:
+          <a href="tel:+46706454933"><i class="fa-solid fa-phone"></i></a>
+        </p>
+      </div>
+    </footer>
+    <button id="scrollToTop" aria-label="Scroll to top" title="Back to top">
+      ↑
+    </button>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
